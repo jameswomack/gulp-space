@@ -1,0 +1,36 @@
+{
+  "name": "gulp-space",
+  "version": "1.0.0",
+  "description": "Group your Gulp tasks via colon-delimited namespaces",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jameswomack/gulp-space.git"
+  },
+  "keywords": [
+    "gulp",
+    "namespace",
+    "tasks",
+    "registry",
+    "group",
+    "organization",
+    "organize",
+    "task"
+  ],
+  "author": "james@womack.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jameswomack/gulp-space/issues"
+  },
+  "homepage": "https://github.com/jameswomack/gulp-space#readme",
+  "devDependencies": {
+    "esprima-fb": "^15001.1.0-dev-harmony-fb",
+    "gulp": "git://github.com/gulpjs/gulp.git#4.0",
+    "jscs": "jscs-dev/node-jscs",
+    "jscs-jsdoc": "^1.1.0",
+    "mocha": "^2.2.5"
+  }
+}
