@@ -12,7 +12,8 @@
 npm i gulp-space -D
 ```
 
-## Example
+## Examples
+### Gulp 4
 ```
 var gulp = require('gulp'),
     gulpSpace = require('gulp-space'),
@@ -36,4 +37,30 @@ gulp.task('build:clean:styl', function(){
 });
 
 gulp.task('build', gulp.parallel(getTaskNamesInNamespace('build')));
+```
+
+### Gulp 3
+```
+var gulp = require('gulp'),
+    gulpSpace = require('gulp-space'),
+    getTaskNamesInNamespace = gulpSpace(gulp)
+
+gulp.task('build:styl:convert', function () {
+  var CSS_DEST = './web-app/css';
+  var SRC_ROOT =  '.';
+
+  return gulp.src('./web-app/styl/foo/foo.styl')
+    .pipe(stylus({use: [nib()]}))
+    .pipe(gulp.dest(path.join(SRC_ROOT,CSS_DEST)));
+});
+
+gulp.task('build:clean:styl', function(){
+  return gulp.src(['./web-app/styl/stats/*.styl', './web-app/css/foo.css'], {
+      read: false,
+      allowEmpty: true
+    })
+    .pipe(grimraf());
+});
+
+gulp.task('build', getTaskNamesInNamespace('build'));
 ```
