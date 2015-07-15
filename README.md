@@ -1,6 +1,6 @@
 # Gulp Space
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/HH_901_and_HH_902_in_the_Carina_nebula_(captured_by_the_Hubble_Space_Telescope).jpg" width="300">
+<img src="https://raw.githubusercontent.com/jameswomack/gulp-space/master/HH_901_and_HH_902_in_the_Carina_nebula_(captured_by_the_Hubble_Space_Telescope).jpg" width="300">
 
 ### Group your Gulp tasks via colon-delimited namespaces. 
 ### Compatible with Gulp 3 & 4.
